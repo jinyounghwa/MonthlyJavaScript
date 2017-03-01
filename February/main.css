@@ -1,0 +1,20 @@
+.menu div:after {
+  content: "";
+  clear: both;
+}
+.menu {
+  text-align: center;
+}
+.menu div {
+  float: left;
+  width:10%;
+}
+.text div {
+  width: 100%;
+  clear: both;
+}
+.selectedTab {
+  border-bottom: 2px solid #16b634;
+  color: #16b634;
+  height: auto;
+}
