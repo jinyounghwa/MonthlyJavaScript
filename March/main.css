@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+.d1 {
+    float: left;
+    padding: 18px;
+    background-color: #644041;
+    color: white
+}
+
+.d2 {
+    float: right;
+    background-color: #644041;
+    padding: 18px;
+    color: white;
+}
+
+.d3 {
+    padding: 18px;
+    background-color: #644041;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+.inputBg {
+  background: #eaeaea;
+  height: 55px;
+}
+.inputBg input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999;
+  background: #fff;
+  padding:10px;
+}
+dl {
+  margin-top: -24px;
+}
+dl > div {
+  padding: 24px 0 0 0;
+}
+dd > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  margin-top: 10px;
+}
+dt {
+  background: #B8C1C8;
+  border-bottom: 1px solid #989EA4;
+  border-top: 1px solid #717D85;
+  color: #FFF;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: sticky;
+  top:-1px;
+}
+
+dd {
+  font: bold 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;
+  bottom:50px;
+}
+dd p {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 20px;
+}
+dd + dd {
+  border-top: 1px solid #CCC
+}
