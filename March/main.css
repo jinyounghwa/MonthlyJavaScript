@@ -74,3 +74,6 @@ dd p {
 dd + dd {
   border-top: 1px solid #CCC
 }
+button {
+  display: none;
+}
