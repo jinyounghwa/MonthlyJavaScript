@@ -19,7 +19,9 @@ oReq.addEventListener('load',function(evt){
 },[])
   console.log(listNode);
 });
-
+// 막힌거 reduce 반환을 다시 accumulator로
+// 그걸 가지고 map 돌려서 li 엘레멘트의 배열로 만들고
+// 마지막으로 forEach 써서 appedChild 
 
 
 
