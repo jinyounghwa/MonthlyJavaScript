@@ -1,26 +1,23 @@
 var oReq = new XMLHttpRequest();
 oReq.addEventListener('load',function(evt){
   var data = JSON.parse(this.responseText);
-  var div = document.getElementsByClassName('content')[0];
+  var divList = document.getElementsByClassName(".content");
 
-  var html = data.map(function(item,idx) {
-        var prevIdx = idx - 1;
-        var idx = idx;
-        var wr = item.height - item.width; // 이건되는데
-        var wr2 = item.height[prevIdx] - item.height; // 이건 왜 NaN인겨..ㅠㅠ 
-        var height = item.height;
-        var width = item.width;
-        console.log(wr);
-      return {
-        wheight : wr,
-        path : item.path
-      };
-      }).map(function(item){
 
-        return "<div><img src=\"" + item.path +"\"></div>";
-    }).join('');
-
-div.innerHTML = html;
+  var listNode = data.reduce(function(prev,curr,index,array){
+        var lastInfo = array[array.length - 1];
+        var prevwidth = prev.x;
+        var preveight = prev.y;
+        if(!lastInfo) { // 이동이 없는 초기 1번째 이미지
+        prevheight = 0;
+        prevwidth = 0;
+        } else { // 나머지 4개 이미지 x값은 marginLeft, y값은   marginTop
+        curr.height = curr.y;
+        curr.width = curr.x;
+      }
+        return curr;
+},[])
+  console.log(listNode);
 });
 
 
