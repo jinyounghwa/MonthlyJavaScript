@@ -3,8 +3,7 @@ var oReq = new XMLHttpRequest();
 oReq.addEventListener('load',function(evt){
   var data = JSON.parse(this.responseText);
   var div = document.getElementsByClassName('content')[0];
-  var pic = document.querySelectorAll(".content div");
-  pic = Array.prototype.slice.call(pic);
+
   var arrayNode = [];
   var listNode = data.reduce(function(prev,curr,index,array){
         var lastInfo = array[array.length - 1];
@@ -24,14 +23,19 @@ oReq.addEventListener('load',function(evt){
 
     return "<div><img src=\"" + item.path +"\"></div>";
 }).join('');
-  var styleNode = arrayNode.map(function(item,idx){
-    console.log(item,idx);
-       // pic[idx].style.marginTop = item.height + 'px';
-      // pic[idx].style.marginLeft = item.width + 'px';
+div.innerHTML = picNode;
 
+var pic = document.querySelectorAll(".content div");
+pic = Array.prototype.slice.call(pic);
+
+pic.forEach(function(el,idx1){
+  var styleNode = arrayNode.map(function(item,idx2){
+      pic[idx2].style.marginTop = item.height + "px";
+      pic[idx2].style.marginLeft = item.width + "px";
     return item;
   });
-div.innerHTML = picNode;
+});
+
 });
 
 

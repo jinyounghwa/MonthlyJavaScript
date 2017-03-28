@@ -1,5 +1,5 @@
 [ { "width": 241, "height": 164, "x": 0, "y":0 ,"path": "/images/1.png" },
-{"width": 248, "height": 386, "x": 300, "y":0, "path": "/images/2.png"},
-{"width": 240, "height": 660, "x":0, "y": 184, "path": "/images/3.png"},
-{"width": 240, "height": 184, "x": 300, "y": 406, "path": "/images/4.png"},
-{"width": 243, "height": 369, "x":0, "y": 864, "path": "/images/5.png"}]
+{"width": 248, "height": 386, "x": 252, "y":-175, "path": "/images/2.png"},
+{"width": 240, "height": 660, "x":0, "y": -223, "path": "/images/3.png"},
+{"width": 240, "height": 184, "x": 252, "y": -444, "path": "/images/4.png"},
+{"width": 243, "height": 369, "x":252, "y": -252, "path": "/images/5.png"}]
