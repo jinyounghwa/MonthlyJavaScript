@@ -25,8 +25,9 @@ oReq.addEventListener('load',function(evt){
     return "<div><img src=\"" + item.path +"\"></div>";
 }).join('');
   var styleNode = arrayNode.map(function(item,idx){
-    console.log(idx);
-     
+    console.log(item,idx);
+       // pic[idx].style.marginTop = item.height + 'px';
+      // pic[idx].style.marginLeft = item.width + 'px';
 
     return item;
   });
